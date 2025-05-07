@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <parent>
+    <artifactId>ai-stack</artifactId>
+    <groupId>pl.beone.ai</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <packaging>pom</packaging>
+
+  <artifactId>ai-stack-basic-panel-adf</artifactId>
+  <properties>
+    <maven.deploy.skip>true</maven.deploy.skip>
+    <docker.verbose>true</docker.verbose>
+  </properties>
+
+
+  <profiles>
+  </profiles>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.1.0</version>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>io.fabric8</groupId>
+        <artifactId>docker-maven-plugin</artifactId>
+        <version>0.43.0</version>
+        <configuration>
+          <verbose>${docker.verbose}</verbose>
+          <images>
+            <image>
+              <alias>${project.artifactId}</alias>
+              <name>${project.artifactId}:${project.version}</name>
+              <build>
+                <contextDir>${project.basedir}</contextDir>
+                <dockerFile>Dockerfile</dockerFile>
+              </build>
+            </image>
+          </images>
+        </configuration>
+        <executions>
+          <execution>
+            <id>docker-build</id>
+            <phase>install</phase>
+            <goals>
+              <goal>build</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

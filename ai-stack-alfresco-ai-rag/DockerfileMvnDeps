@@ -1,0 +1,14 @@
+FROM maven:3.8.7-eclipse-temurin-17 AS deps
+
+WORKDIR /app
+COPY pom.xml .
+COPY target/internal-packages/ /app/packages/
+
+RUN mvn install:install-file \
+    -Dfile=/app/packages/ai-stack-communication-utils-1.0-SNAPSHOT.jar \
+    -DgroupId=pl.beone.ai \
+    -DartifactId=ai-stack-communication-utils \
+    -Dversion=1.0-SNAPSHOT \
+    -Dpackaging=jar \
+    -DgeneratePom=true
+RUN mvn dependency:go-offline

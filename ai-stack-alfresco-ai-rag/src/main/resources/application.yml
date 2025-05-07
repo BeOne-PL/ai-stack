@@ -1,0 +1,49 @@
+spring:
+  application:
+    name: ai-framework
+  http:
+    client:
+      connect-timeout: 60s
+      read-timeout: 60s
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+  elasticsearch:
+    uris: http://elasticsearch:9200
+
+  ai:
+    ollama:
+      base-url: http://ollama-00:11434
+      init:
+        pull-model-strategy: when_missing
+      chat:
+        options:
+          model: qwen3:8b-q4_K_M # qwen3:30b-a3b-q4_K_M
+          temperature: 0.0
+      embedding:
+        options:
+          model: mxbai-embed-large
+    vectorstore:
+      elasticsearch:
+        initialize-schema: true
+        index-name: alfresco-ai-document-index
+        dimensions: 1024
+
+server:
+  port: 9999
+
+cors:
+  filter:
+    disabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

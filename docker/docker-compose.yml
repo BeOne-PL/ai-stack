@@ -1,0 +1,355 @@
+name: beone-ai-stack
+networks:
+  ai_cloud:
+    external: true
+
+services:
+
+  alfresco:
+    image: ai-stack-platform-docker:1.0-SNAPSHOT
+    networks:
+      ai_cloud:
+        aliases:
+          - alfresco
+#    build:
+#      dockerfile: ./Dockerfile
+#      context: ../../../ai-stack-platform-docker/target
+    environment:
+      JAVA_TOOL_OPTIONS: >-
+        -Dencryption.keystore.type=JCEKS
+        -Dencryption.cipherAlgorithm=DESede/CBC/PKCS5Padding
+        -Dencryption.keyAlgorithm=DESede
+        -Dencryption.keystore.location=/usr/local/tomcat/shared/classes/alfresco/extension/keystore/keystore
+        -Dmetadata-keystore.password=mp6yc0UD9e
+        -Dmetadata-keystore.aliases=metadata
+        -Dmetadata-keystore.metadata.password=oKIWzVdEdA
+        -Dmetadata-keystore.metadata.algorithm=DESede
+      JAVA_OPTS: >-
+        -Ddb.driver=org.postgresql.Driver
+        -Ddb.url=jdbc:postgresql://postgres:5432/alfresco
+        -Dsolr.host=solr6
+        -Dsolr.secureComms=secret
+        -Dsolr.sharedSecret=secret
+        -Dindex.subsystem.name=solr6
+        -Dcsrf.filter.enabled=false
+        -Dmessaging.broker.url="failover:(nio://activemq:61616)?timeout=3000&jms.useCompression=true"
+        -DlocalTransform.core-aio.url=http://transform-core-aio:8090/
+        -Ddeployment.method=DOCKER_COMPOSE
+        -XX:MinRAMPercentage=50
+        -XX:MaxRAMPercentage=80
+      CATALINA_OPTS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=0.0.0.0:8888"
+    ports:
+      - "${acs.debug.port}:8888"
+    volumes:
+      - ai-stack-acs-volume:/usr/local/tomcat/alf_data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/alfresco/api/-default-/public/alfresco/versions/1/probes/-ready-"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 1m
+    depends_on:
+      postgres:
+        condition: service_healthy
+      activemq:
+        condition: service_healthy
+      transform-core-aio:
+        condition: service_healthy
+      solr6:
+        condition: service_healthy
+
+  postgres:
+    image: postgres:14.4
+    networks:
+      ai_cloud:
+        aliases:
+          - postgres
+    environment:
+      POSTGRES_DB: alfresco
+      POSTGRES_USER: alfresco
+      POSTGRES_PASSWORD: alfresco
+    command: postgres -c max_connections=300 -c log_min_messages=LOG
+    healthcheck:
+      test: [ "CMD", "pg_isready" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    ports:
+      - "${postgres.port}:5432"
+    volumes:
+      - ai-stack-db-volume:/var/lib/postgresql/data
+
+  solr6:
+    image: docker.io/alfresco/alfresco-search-services:2.0.12
+    networks:
+      ai_cloud:
+        aliases:
+          - solr6
+    environment:
+      SOLR_ALFRESCO_HOST: "alfresco"
+      SOLR_ALFRESCO_PORT: "8080"
+      SOLR_SOLR_HOST: "solr6"
+      SOLR_SOLR_PORT: "8983"
+      SOLR_CREATE_ALFRESCO_DEFAULTS: "alfresco"
+      ALFRESCO_SECURE_COMMS: "secret"
+      JAVA_TOOL_OPTIONS: >-
+        -Dalfresco.secureComms.secret=secret
+    healthcheck:
+          test: ["CMD", "curl", "-f", "-H", "X-Alfresco-Search-Secret:secret", "http://localhost:8983/solr/alfresco/admin/ping"]
+          interval: 30s
+          timeout: 10s
+          retries: 5
+    ports:
+      - "8983:8983"
+    volumes:
+      - ai-stack-ass-volume:/opt/alfresco-search-services/contentstore
+      - ai-stack-ass-volume:/opt/alfresco-search-services/data
+
+  activemq:
+      image: docker.io/alfresco/alfresco-activemq:5.18-jre17-rockylinux8
+      networks:
+        ai_cloud:
+          aliases:
+            - activemq
+      environment:
+        ACTIVEMQ_ADMIN_LOGIN: admin
+        ACTIVEMQ_ADMIN_PASSWORD: admin
+      healthcheck:
+        test: [ "CMD", "curl", "-f", "--user", "admin:admin", "http://localhost:8161/admin" ]
+        interval: 10s
+        timeout: 5s
+        retries: 5
+      mem_limit: 1g
+      ports:
+        - 8161:8161 # Web Console
+        - 5672:5672 # AMQP
+        - 61616:61616 # OpenWire
+        - 61613:61613 # STOMP
+
+  transform-core-aio:
+    image: docker.io/alfresco/alfresco-transform-core-aio:5.1.4
+    networks:
+      ai_cloud:
+        aliases:
+          - transform-core-aio
+    environment:
+      ACTIVEMQ_URL: nio://activemq:61616
+      ACTIVEMQ_USER: admin
+      ACTIVEMQ_PASSWORD: admin
+      JAVA_OPTS: >-
+        -Dserver.tomcat.threads.min=4        
+        -Dserver.tomcat.threads.max=12
+        -XX:MinRAMPercentage=50
+        -XX:MaxRAMPercentage=80
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8090/actuator/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    depends_on:
+      activemq:
+        condition: service_healthy
+
+  proxy:
+    image: ai-stack-proxy:1.0-SNAPSHOT
+    networks:
+      ai_cloud:
+        aliases:
+          - proxy
+    environment:
+      DISABLE_PROMETHEUS: "true"
+      DISABLE_SYNCSERVICE: "true"
+      DISABLE_ADW: "true"
+      DISABLE_CONTROL_CENTER: "true"
+    depends_on:
+      alfresco:
+        condition: service_started
+    ports:
+      - "80:8080"
+      - "8080:8080"
+
+  basic-panel-adf:
+    networks:
+      ai_cloud:
+        aliases:
+          - basic-panel-adf
+    image: ai-stack-basic-panel-adf:1.0-SNAPSHOT
+
+  ai-pipelines:
+    image: ai-stack-open-webui-pipelines:1.0-SNAPSHOT
+    container_name: ai-pipelines
+    restart: "no"
+    networks:
+      ai_cloud:
+        aliases:
+          - ai-pipelines
+    #    entrypoint:
+    #      - bash
+    #      - -lc
+    #      - |
+    #        echo "[override] pinning torch …" && \
+    #        pip install \
+    #          --upgrade --no-deps --force-reinstall \
+    #          --index-url https://download.pytorch.org/whl/cu126 \
+    #          torch==2.6.0+cu126 && \
+    #        echo "[override] exec original entrypoint" && \
+    #        exec bash start.sh
+    volumes:
+      - ./ai-pipelines-runtime-data:/app/pipelines
+      - ai-stack-pipelines-cache-volume:/root/.cache
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [ gpu ]
+
+
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:v0.6.5-cuda
+    container_name: open-webui
+    restart: "no"
+    volumes:
+      - ai-stack-openwebui-volume:/app/backend/data
+    networks:
+      ai_cloud:
+        aliases:
+          - open-webui
+    environment:
+      WEBUI_AUTH: False # Just for current usage example - use auth in public deployments
+      OLLAMA_BASE_URLS: http://ollama-00:11434
+      WEBUI_NAME: BeOne AI Chat
+      USE_CUDA_DOCKER: "true"
+    #      OAUTH_CLIENT_ID: open-webui-oidc
+    #      OAUTH_CLIENT_SECRET: "SECRET"
+    #      OPENID_PROVIDER_URL: https://<DOMAIN>/auth/realms/<REALM>/.well-known/openid-configuration
+    #      OAUTH_PROVIDER_NAME: (Button: Continue with)<OAUTH_PROVIDER_NAME>
+    #      OAUTH_SCOPES: openid email profile
+    #      ENABLE_OAUTH_SIGNUP: true
+    #      OAUTH_MERGE_ACCOUNTS_BY_EMAIL: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [ gpu ]
+  ollama:
+    image: ollama/ollama:0.6.6
+    container_name: ollama-00
+    restart: "no"
+    pull_policy: if_not_present
+    tty: true
+    environment:
+      OLLAMA_KEEP_ALIVE: 24h
+      OLLAMA_HOST: 0.0.0.0
+    volumes:
+      - ai-stack-ollama-models-volume:/root/.ollama
+      - ai-stack-ollama-cache-volume:/root/.cache/ollama
+    networks:
+      ai_cloud:
+        aliases:
+          - ollama-00
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [gpu]
+  elasticsearch:
+    image: elasticsearch:${ELASTICSEARCH_VERSION}
+    networks:
+      ai_cloud:
+        aliases:
+          - elasticsearch
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    cap_add:
+      - IPC_LOCK
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - network.host=0.0.0.0
+    healthcheck:
+      test: ["CMD-SHELL", "curl --silent --fail http://localhost:9200/_cluster/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    volumes:
+      - ai-stack-elastic-volume:/usr/share/elasticsearch/data
+  kibana:
+    image: kibana:${ELASTICSEARCH_VERSION}
+    networks:
+      ai_cloud:
+        aliases:
+          - kibana
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    ports:
+      - "5601:5601"
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+  alfresco-ai-framework:
+    image: ai-stack-alfresco-ai-rag:1.0.0-SNAPSHOT
+    networks:
+      ai_cloud:
+        aliases:
+          - alfresco-ai-framework
+    environment:
+      - SPRING_ELASTICSEARCH_URIS=${ELASTICSEARCH_URIS}
+      - AI_PIPELINE_URL=${AI_PIPELINE_URL}
+      - AI_PIPELINE_API_KEY=${AI_PIPELINE_API_KEY}
+      - SPRING_AI_OLLAMA_BASE_URL=${OLLAMA_BASE_URL}
+      - SPRING_AI_OLLAMA_CHAT_OPTIONS_MODEL=${OLLAMA_CHAT_MAIN_MODEL}
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    ports:
+      - "9999:9999"
+  alfresco-ai-sync:
+    restart: always
+    image: ai-stack-alfresco-ai-sync:1.0.0-SNAPSHOT
+    networks:
+      ai_cloud:
+        aliases:
+          - alfresco-ai-sync
+    environment:
+      - content.service.url=http://alfresco:8080
+      - alfresco.ai.base.url=http://alfresco-ai-framework:9999
+      - spring.activemq.brokerUrl=tcp://activemq:61616
+      - logging.level.pl.beone=INFO
+      - logging.level.org.alfresco=INFO
+    depends_on:
+      alfresco:
+        condition: service_healthy
+      solr6:
+        condition: service_healthy
+
+
+volumes:
+  ai-stack-acs-volume:
+    external: true
+  ai-stack-db-volume:
+    external: true
+  ai-stack-ass-volume:
+    external: true
+  ai-stack-pipelines-cache-volume:
+    external: true
+  ai-stack-openwebui-volume:
+    external: true
+
+  ai-stack-ollama-models-volume:
+    external: true
+  ai-stack-ollama-cache-volume:
+    external: true
+  ai-stack-elastic-volume:
+    external: true
+

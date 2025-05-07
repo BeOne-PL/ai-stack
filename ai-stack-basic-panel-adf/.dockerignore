@@ -1,0 +1,12 @@
+.angular
+dist
+node_modules
+target
+*.iml
+
+**/target/**
+**/.angular/**
+**/dist/**
+**/node_modules/**
+**/target/**
+**/*.iml/**

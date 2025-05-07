@@ -1,0 +1,398 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.15 Chrome/134.0.6998.205 Electron/35.2.1 Safari/537.36" version="26.2.15" pages="8">
+  <diagram name="arch-Dark" id="4HumSuI_9FjyEdduQtr_">
+    <mxGraphModel dx="1603" dy="975" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="EREbLmSrYM7T41Cm4FgZ-0" />
+        <mxCell id="EREbLmSrYM7T41Cm4FgZ-1" parent="EREbLmSrYM7T41Cm4FgZ-0" />
+        <mxCell id="qhza85cY1zdiU_DK7z5C-0" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="EREbLmSrYM7T41Cm4FgZ-1">
+          <mxGeometry x="39" y="419" width="750" height="750" as="geometry" />
+        </mxCell>
+        <mxCell id="EREbLmSrYM7T41Cm4FgZ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;startArrow=none;startFill=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=classicThin;endFill=1;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=default;shadow=1;shadowColor=#000000;" edge="1" parent="EREbLmSrYM7T41Cm4FgZ-1" source="EREbLmSrYM7T41Cm4FgZ-4" target="EREbLmSrYM7T41Cm4FgZ-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EREbLmSrYM7T41Cm4FgZ-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;startArrow=classicThin;startFill=1;endArrow=none;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=default;shadow=1;shadowColor=#000000;" edge="1" parent="EREbLmSrYM7T41Cm4FgZ-1" source="EREbLmSrYM7T41Cm4FgZ-4" target="EREbLmSrYM7T41Cm4FgZ-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EREbLmSrYM7T41Cm4FgZ-4" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;alfresco-ai-framework&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;i&gt;Spring AI&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;(see:&amp;nbsp;&lt;/i&gt;&lt;span style=&quot;&quot;&gt;&lt;i&gt;https://github.com/aborroy/alfresco-ai-framework)&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=default;shadow=1;fillColor=#000000;shadowColor=#000000;" vertex="1" parent="EREbLmSrYM7T41Cm4FgZ-1">
+          <mxGeometry x="462" y="720" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EREbLmSrYM7T41Cm4FgZ-5" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Content Repository&lt;/font&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;font&gt;Alfresco Repository&lt;/font&gt;&lt;div&gt;&lt;div&gt;&lt;font&gt;&lt;font style=&quot;&quot;&gt;(&lt;/font&gt;&lt;font style=&quot;&quot;&gt;see:&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;https://docs.alfresco.com/)&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=default;shadow=1;fillColor=#000000;shadowColor=#000000;" vertex="1" parent="EREbLmSrYM7T41Cm4FgZ-1">
+          <mxGeometry x="517" y="440" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="EREbLmSrYM7T41Cm4FgZ-6" value="&lt;b&gt;&lt;font face=&quot;Helvetica&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;UI Control Panel&lt;/font&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;i&gt;Alfresco ADF&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;i&gt;(see:&amp;nbsp;&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;&quot;&gt;&lt;i&gt;https://www.alfresco.com/abn/adf/docs/&lt;/i&gt;&lt;/span&gt;&lt;i style=&quot;&quot;&gt;)&lt;/i&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=default;shadow=1;fillColor=#000000;shadowColor=#000000;" vertex="1" parent="EREbLmSrYM7T41Cm4FgZ-1">
+          <mxGeometry x="122" y="450" width="260" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="EREbLmSrYM7T41Cm4FgZ-7" value="" style="endArrow=classicThin;html=1;rounded=0;entryX=0.002;entryY=0.46;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;startArrow=none;startFill=0;endFill=1;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=default;shadow=1;shadowColor=#000000;" edge="1" parent="EREbLmSrYM7T41Cm4FgZ-1" source="EREbLmSrYM7T41Cm4FgZ-6" target="EREbLmSrYM7T41Cm4FgZ-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="925" as="sourcePoint" />
+            <mxPoint x="50" y="875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EREbLmSrYM7T41Cm4FgZ-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=default;shadow=1;shadowColor=#000000;" edge="1" parent="EREbLmSrYM7T41Cm4FgZ-1" source="EREbLmSrYM7T41Cm4FgZ-9" target="EREbLmSrYM7T41Cm4FgZ-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EREbLmSrYM7T41Cm4FgZ-9" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Chat Universal API&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;font style=&quot;&quot;&gt;Open Web UI&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot;&gt;(see:&amp;nbsp;&lt;span style=&quot;&quot;&gt;https://docs.openwebui.com/)&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=default;shadow=1;fillColor=#000000;shadowColor=#000000;" vertex="1" parent="EREbLmSrYM7T41Cm4FgZ-1">
+          <mxGeometry x="147" y="592.5" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EREbLmSrYM7T41Cm4FgZ-10" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endFill=1;startFill=1;startArrow=classicThin;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=default;shadow=1;shadowColor=#000000;" edge="1" parent="EREbLmSrYM7T41Cm4FgZ-1" source="EREbLmSrYM7T41Cm4FgZ-9" target="EREbLmSrYM7T41Cm4FgZ-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="432" y="915" as="sourcePoint" />
+            <mxPoint x="482" y="865" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EREbLmSrYM7T41Cm4FgZ-11" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Pipelines&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;font style=&quot;&quot;&gt;UI-Agnostic OpenAI API Plugin Framework&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot;&gt;(see:&amp;nbsp;&lt;span style=&quot;&quot;&gt;https://docs.openwebui.com/pipelines/)&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=default;shadow=1;fillColor=#000000;shadowColor=#000000;" vertex="1" parent="EREbLmSrYM7T41Cm4FgZ-1">
+          <mxGeometry x="117" y="760" width="270" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EREbLmSrYM7T41Cm4FgZ-12" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;alfresco-ai-sync&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;i&gt;Spring Boot&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;(see:&amp;nbsp;&lt;/i&gt;&lt;span style=&quot;&quot;&gt;&lt;i&gt;https://github.com/aborroy/alfresco-ai-framework)&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=default;shadow=1;fillColor=#000000;shadowColor=#000000;" vertex="1" parent="EREbLmSrYM7T41Cm4FgZ-1">
+          <mxGeometry x="459" y="587.5" width="306" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="EREbLmSrYM7T41Cm4FgZ-13" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=classicThin;startFill=1;endFill=1;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=default;shadow=1;shadowColor=#000000;" edge="1" parent="EREbLmSrYM7T41Cm4FgZ-1" source="EREbLmSrYM7T41Cm4FgZ-12" target="EREbLmSrYM7T41Cm4FgZ-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="755" as="sourcePoint" />
+            <mxPoint x="460" y="705" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EREbLmSrYM7T41Cm4FgZ-14" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=classicThin;startFill=1;endFill=1;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=default;shadow=1;shadowColor=#000000;" edge="1" parent="EREbLmSrYM7T41Cm4FgZ-1" source="EREbLmSrYM7T41Cm4FgZ-4" target="EREbLmSrYM7T41Cm4FgZ-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="915" as="sourcePoint" />
+            <mxPoint x="240" y="865" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EREbLmSrYM7T41Cm4FgZ-15" value="" style="endArrow=none;html=1;rounded=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;startArrow=classicThin;startFill=1;endFill=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=default;shadow=1;shadowColor=#000000;" edge="1" parent="EREbLmSrYM7T41Cm4FgZ-1" source="EREbLmSrYM7T41Cm4FgZ-18" target="EREbLmSrYM7T41Cm4FgZ-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="980" as="sourcePoint" />
+            <mxPoint x="240" y="865" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="507" y="840" />
+              <mxPoint x="537" y="840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EREbLmSrYM7T41Cm4FgZ-16" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=classicThin;startFill=1;endFill=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=default;shadow=1;shadowColor=#000000;" edge="1" parent="EREbLmSrYM7T41Cm4FgZ-1" source="EREbLmSrYM7T41Cm4FgZ-17" target="EREbLmSrYM7T41Cm4FgZ-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="315" y="1015" as="sourcePoint" />
+            <mxPoint x="720" y="830" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EREbLmSrYM7T41Cm4FgZ-17" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;VectorDB&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;i&gt;elasticsearch&lt;/i&gt;&lt;div&gt;&lt;i&gt;(see:&amp;nbsp;&lt;/i&gt;&lt;span style=&quot;&quot;&gt;&lt;i&gt;https://www.elastic.co/)&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=default;shadow=1;fillColor=#000000;shadowColor=#000000;" vertex="1" parent="EREbLmSrYM7T41Cm4FgZ-1">
+          <mxGeometry x="597" y="890" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EREbLmSrYM7T41Cm4FgZ-18" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;LLM Host&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;i&gt;Ollama&lt;/i&gt;&lt;div&gt;&lt;i&gt;(see:&amp;nbsp;&lt;/i&gt;&lt;span style=&quot;&quot;&gt;&lt;i&gt;https://ollama.com/)&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=default;shadow=1;fillColor=#000000;shadowColor=#000000;" vertex="1" parent="EREbLmSrYM7T41Cm4FgZ-1">
+          <mxGeometry x="430" y="890" width="155" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EREbLmSrYM7T41Cm4FgZ-20" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Open Source&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;AI Models Source&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font&gt;(see:&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;http://huggingface.co/,&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;i&gt;https://ollama.com/)&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=default;shadow=1;fillStyle=auto;fillColor=#000000;shadowColor=#000000;" vertex="1" parent="EREbLmSrYM7T41Cm4FgZ-1">
+          <mxGeometry x="160" y="980" width="260" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="EREbLmSrYM7T41Cm4FgZ-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.88;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;endArrow=classicThin;endFill=1;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=default;shadow=1;shadowColor=#000000;" edge="1" parent="EREbLmSrYM7T41Cm4FgZ-1" source="EREbLmSrYM7T41Cm4FgZ-18" target="EREbLmSrYM7T41Cm4FgZ-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="1080" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="508" y="1025" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GV-p8jnX2rhddroByrnB-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.07;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=#FFFFFF;shadow=1;shadowColor=#000000;" edge="1" parent="EREbLmSrYM7T41Cm4FgZ-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="70" y="800" />
+              <mxPoint x="70" y="1052" />
+            </Array>
+            <mxPoint x="117" y="800" as="sourcePoint" />
+            <mxPoint x="178" y="1052" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="arch-Light" id="lLTXpbFzFo0FYlgHKHWf">
+    <mxGraphModel dx="1489" dy="906" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="wR7xveNem7RCrPpGD2Qv-0" />
+        <mxCell id="wR7xveNem7RCrPpGD2Qv-1" parent="wR7xveNem7RCrPpGD2Qv-0" />
+        <mxCell id="j-imYbxM0NQqyriJgaIV-0" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;" vertex="1" parent="wR7xveNem7RCrPpGD2Qv-1">
+          <mxGeometry x="50" y="425" width="750" height="750" as="geometry" />
+        </mxCell>
+        <mxCell id="wR7xveNem7RCrPpGD2Qv-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;startArrow=none;startFill=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=classicThin;endFill=1;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=#000000;shadow=1;shadowColor=#FFFFFF;" edge="1" parent="wR7xveNem7RCrPpGD2Qv-1" source="wR7xveNem7RCrPpGD2Qv-4" target="wR7xveNem7RCrPpGD2Qv-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wR7xveNem7RCrPpGD2Qv-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;startArrow=classicThin;startFill=1;endArrow=none;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=#000000;shadow=1;shadowColor=#FFFFFF;" edge="1" parent="wR7xveNem7RCrPpGD2Qv-1" source="wR7xveNem7RCrPpGD2Qv-4" target="wR7xveNem7RCrPpGD2Qv-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wR7xveNem7RCrPpGD2Qv-4" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;alfresco-ai-framework&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;i&gt;Spring AI&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;(see:&amp;nbsp;&lt;/i&gt;&lt;span style=&quot;&quot;&gt;&lt;i&gt;https://github.com/aborroy/alfresco-ai-framework)&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;shadow=1;fillColor=#FFFFFF;shadowColor=#FFFFFF;" vertex="1" parent="wR7xveNem7RCrPpGD2Qv-1">
+          <mxGeometry x="462" y="720" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wR7xveNem7RCrPpGD2Qv-5" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Content Repository&lt;/font&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;font&gt;Alfresco Repository&lt;/font&gt;&lt;div&gt;&lt;div&gt;&lt;font&gt;&lt;font style=&quot;&quot;&gt;(&lt;/font&gt;&lt;font style=&quot;&quot;&gt;see:&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;https://docs.alfresco.com/)&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;shadow=1;fillColor=#FFFFFF;shadowColor=#FFFFFF;" vertex="1" parent="wR7xveNem7RCrPpGD2Qv-1">
+          <mxGeometry x="517" y="440" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="wR7xveNem7RCrPpGD2Qv-6" value="&lt;b&gt;&lt;font face=&quot;Helvetica&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;UI Control Panel&lt;/font&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;i&gt;Alfresco ADF&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;i&gt;(see:&amp;nbsp;&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;&quot;&gt;&lt;i&gt;https://www.alfresco.com/abn/adf/docs/&lt;/i&gt;&lt;/span&gt;&lt;i style=&quot;&quot;&gt;)&lt;/i&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;shadow=1;fillColor=#FFFFFF;shadowColor=#FFFFFF;" vertex="1" parent="wR7xveNem7RCrPpGD2Qv-1">
+          <mxGeometry x="122" y="450" width="260" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="wR7xveNem7RCrPpGD2Qv-7" value="" style="endArrow=classicThin;html=1;rounded=0;entryX=0.002;entryY=0.46;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;startArrow=none;startFill=0;endFill=1;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=#000000;shadow=1;shadowColor=#FFFFFF;" edge="1" parent="wR7xveNem7RCrPpGD2Qv-1" source="wR7xveNem7RCrPpGD2Qv-6" target="wR7xveNem7RCrPpGD2Qv-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="925" as="sourcePoint" />
+            <mxPoint x="50" y="875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wR7xveNem7RCrPpGD2Qv-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=#000000;shadow=1;shadowColor=#FFFFFF;" edge="1" parent="wR7xveNem7RCrPpGD2Qv-1" source="wR7xveNem7RCrPpGD2Qv-9" target="wR7xveNem7RCrPpGD2Qv-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wR7xveNem7RCrPpGD2Qv-9" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Chat Universal API&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;font style=&quot;&quot;&gt;Open Web UI&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot;&gt;(see:&amp;nbsp;&lt;span style=&quot;&quot;&gt;https://docs.openwebui.com/)&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;shadow=1;fillColor=#FFFFFF;shadowColor=#FFFFFF;" vertex="1" parent="wR7xveNem7RCrPpGD2Qv-1">
+          <mxGeometry x="147" y="592.5" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wR7xveNem7RCrPpGD2Qv-10" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endFill=1;startFill=1;startArrow=classicThin;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=#000000;shadow=1;shadowColor=#FFFFFF;" edge="1" parent="wR7xveNem7RCrPpGD2Qv-1" source="wR7xveNem7RCrPpGD2Qv-9" target="wR7xveNem7RCrPpGD2Qv-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="432" y="915" as="sourcePoint" />
+            <mxPoint x="482" y="865" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wR7xveNem7RCrPpGD2Qv-11" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Pipelines&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;font style=&quot;&quot;&gt;UI-Agnostic OpenAI API Plugin Framework&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot;&gt;(see:&amp;nbsp;&lt;span style=&quot;&quot;&gt;https://docs.openwebui.com/pipelines/)&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;shadow=1;fillColor=#FFFFFF;shadowColor=#FFFFFF;" vertex="1" parent="wR7xveNem7RCrPpGD2Qv-1">
+          <mxGeometry x="117" y="760" width="270" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wR7xveNem7RCrPpGD2Qv-12" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;alfresco-ai-sync&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;i&gt;Spring Boot&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;(see:&amp;nbsp;&lt;/i&gt;&lt;span style=&quot;&quot;&gt;&lt;i&gt;https://github.com/aborroy/alfresco-ai-framework)&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;shadow=1;fillColor=#FFFFFF;shadowColor=#FFFFFF;" vertex="1" parent="wR7xveNem7RCrPpGD2Qv-1">
+          <mxGeometry x="459" y="587.5" width="306" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="wR7xveNem7RCrPpGD2Qv-13" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=classicThin;startFill=1;endFill=1;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=#000000;shadow=1;shadowColor=#FFFFFF;" edge="1" parent="wR7xveNem7RCrPpGD2Qv-1" source="wR7xveNem7RCrPpGD2Qv-12" target="wR7xveNem7RCrPpGD2Qv-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="755" as="sourcePoint" />
+            <mxPoint x="460" y="705" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wR7xveNem7RCrPpGD2Qv-14" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=classicThin;startFill=1;endFill=1;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=#000000;shadow=1;shadowColor=#FFFFFF;" edge="1" parent="wR7xveNem7RCrPpGD2Qv-1" source="wR7xveNem7RCrPpGD2Qv-4" target="wR7xveNem7RCrPpGD2Qv-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="915" as="sourcePoint" />
+            <mxPoint x="240" y="865" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wR7xveNem7RCrPpGD2Qv-15" value="" style="endArrow=none;html=1;rounded=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;startArrow=classicThin;startFill=1;endFill=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=#000000;shadow=1;shadowColor=#FFFFFF;" edge="1" parent="wR7xveNem7RCrPpGD2Qv-1" source="wR7xveNem7RCrPpGD2Qv-18" target="wR7xveNem7RCrPpGD2Qv-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="980" as="sourcePoint" />
+            <mxPoint x="240" y="865" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="507" y="840" />
+              <mxPoint x="537" y="840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wR7xveNem7RCrPpGD2Qv-16" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=classicThin;startFill=1;endFill=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=#000000;shadow=1;shadowColor=#FFFFFF;" edge="1" parent="wR7xveNem7RCrPpGD2Qv-1" source="wR7xveNem7RCrPpGD2Qv-17" target="wR7xveNem7RCrPpGD2Qv-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="315" y="1015" as="sourcePoint" />
+            <mxPoint x="720" y="830" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wR7xveNem7RCrPpGD2Qv-17" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;VectorDB&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;i&gt;elasticsearch&lt;/i&gt;&lt;div&gt;&lt;i&gt;(see:&amp;nbsp;&lt;/i&gt;&lt;span style=&quot;&quot;&gt;&lt;i&gt;https://www.elastic.co/)&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;shadow=1;fillColor=#FFFFFF;shadowColor=#FFFFFF;" vertex="1" parent="wR7xveNem7RCrPpGD2Qv-1">
+          <mxGeometry x="597" y="890" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wR7xveNem7RCrPpGD2Qv-18" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;LLM Host&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;i&gt;Ollama&lt;/i&gt;&lt;div&gt;&lt;i&gt;(see:&amp;nbsp;&lt;/i&gt;&lt;span style=&quot;&quot;&gt;&lt;i&gt;https://ollama.com/)&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;shadow=1;fillColor=#FFFFFF;shadowColor=#FFFFFF;" vertex="1" parent="wR7xveNem7RCrPpGD2Qv-1">
+          <mxGeometry x="430" y="890" width="155" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wR7xveNem7RCrPpGD2Qv-20" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Open Source&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;AI Models Source&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font&gt;(see:&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;http://huggingface.co/,&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;i&gt;https://ollama.com/)&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;shadow=1;fillStyle=auto;fillColor=#FFFFFF;shadowColor=#FFFFFF;" vertex="1" parent="wR7xveNem7RCrPpGD2Qv-1">
+          <mxGeometry x="160" y="980" width="260" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="wR7xveNem7RCrPpGD2Qv-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.07;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=#000000;shadow=1;shadowColor=#FFFFFF;" edge="1" parent="wR7xveNem7RCrPpGD2Qv-1" source="wR7xveNem7RCrPpGD2Qv-11" target="wR7xveNem7RCrPpGD2Qv-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="70" y="800" />
+              <mxPoint x="70" y="1052" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wR7xveNem7RCrPpGD2Qv-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.88;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;endArrow=classicThin;endFill=1;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=#000000;shadow=1;shadowColor=#FFFFFF;" edge="1" parent="wR7xveNem7RCrPpGD2Qv-1" source="wR7xveNem7RCrPpGD2Qv-18" target="wR7xveNem7RCrPpGD2Qv-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="1080" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="508" y="1025" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Pipelines-Dark" id="iH1kmPAOsXa30wkzarUt">
+    <mxGraphModel dx="834" dy="507" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="ziR7Vgep0rN8g1Z1O0ls-0" />
+        <mxCell id="ziR7Vgep0rN8g1Z1O0ls-1" parent="ziR7Vgep0rN8g1Z1O0ls-0" />
+        <mxCell id="owpVzIIrV7MgcJbzdMLu-18" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;" vertex="1" parent="ziR7Vgep0rN8g1Z1O0ls-1">
+          <mxGeometry x="170" y="80" width="540" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="owpVzIIrV7MgcJbzdMLu-17" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=0;strokeColor=#FFFFFF;shadow=1;shadowColor=#000000;" edge="1" parent="ziR7Vgep0rN8g1Z1O0ls-1" source="ziR7Vgep0rN8g1Z1O0ls-12" target="owpVzIIrV7MgcJbzdMLu-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ziR7Vgep0rN8g1Z1O0ls-12" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Pipelines&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;font style=&quot;&quot;&gt;UI-Agnostic OpenAI API Plugin Framework&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot;&gt;(see:&amp;nbsp;&lt;span style=&quot;&quot;&gt;https://docs.openwebui.com/pipelines/)&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=#FFFFFF;shadow=1;fillColor=#000000;shadowColor=#000000;gradientColor=none;" vertex="1" parent="ziR7Vgep0rN8g1Z1O0ls-1">
+          <mxGeometry x="190" y="100" width="270" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="owpVzIIrV7MgcJbzdMLu-14" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&lt;b&gt;MoritzLaurer/mDeBERTa-v3-base-mnli-xnli&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;b&gt;++&amp;nbsp;Open Source: &lt;/b&gt;MIT&lt;br&gt;&lt;b&gt;+ Model Size: &lt;/b&gt;279M params&lt;br&gt;&lt;b&gt;+ Model purpose:&amp;nbsp;&lt;/b&gt;Zero-Shot Classification&lt;br&gt;&lt;b&gt;+ Multilingual Support&lt;/b&gt;&lt;br&gt;&lt;b&gt;+ Available on Huggingface&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;*(see:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-mnli-xnli/)&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;fillColor=#000000;strokeColor=#FFFFFF;fontColor=#FFFFFF;gradientColor=none;shadow=1;shadowColor=#000000;" vertex="1" parent="ziR7Vgep0rN8g1Z1O0ls-1">
+          <mxGeometry x="280" y="200" width="420" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="owpVzIIrV7MgcJbzdMLu-15" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="owpVzIIrV7MgcJbzdMLu-14">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="owpVzIIrV7MgcJbzdMLu-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="ziR7Vgep0rN8g1Z1O0ls-1" source="ziR7Vgep0rN8g1Z1O0ls-12" target="ziR7Vgep0rN8g1Z1O0ls-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Pipelines-Light" id="JdgVrqnlmO9YCUFXmktE">
+    <mxGraphModel dx="719" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="yb4hA4Khy_7tdi6xdVI1-0" />
+        <mxCell id="yb4hA4Khy_7tdi6xdVI1-1" parent="yb4hA4Khy_7tdi6xdVI1-0" />
+        <mxCell id="yb4hA4Khy_7tdi6xdVI1-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="yb4hA4Khy_7tdi6xdVI1-1">
+          <mxGeometry x="170" y="80" width="540" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="yb4hA4Khy_7tdi6xdVI1-3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=0;strokeColor=#000000;shadow=1;shadowColor=#FFFFFF;" edge="1" parent="yb4hA4Khy_7tdi6xdVI1-1" source="yb4hA4Khy_7tdi6xdVI1-4" target="yb4hA4Khy_7tdi6xdVI1-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yb4hA4Khy_7tdi6xdVI1-4" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Pipelines&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;font style=&quot;&quot;&gt;UI-Agnostic OpenAI API Plugin Framework&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Helvetica&quot;&gt;(see:&amp;nbsp;&lt;span style=&quot;&quot;&gt;https://docs.openwebui.com/pipelines/)&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;shadow=1;fillColor=#FFFFFF;shadowColor=#FFFFFF;gradientColor=none;strokeWidth=3;" vertex="1" parent="yb4hA4Khy_7tdi6xdVI1-1">
+          <mxGeometry x="190" y="100" width="270" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yb4hA4Khy_7tdi6xdVI1-5" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&lt;b&gt;MoritzLaurer/mDeBERTa-v3-base-mnli-xnli&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;b&gt;++&amp;nbsp;Open Source: &lt;/b&gt;MIT&lt;br&gt;&lt;b&gt;+ Model Size: &lt;/b&gt;279M params&lt;br&gt;&lt;b&gt;+ Model purpose:&amp;nbsp;&lt;/b&gt;Zero-Shot Classification&lt;br&gt;&lt;b&gt;+ Multilingual Support&lt;/b&gt;&lt;br&gt;&lt;b&gt;+ Available on Huggingface&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;&quot;&gt;*(see:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-mnli-xnli/)&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;gradientColor=none;shadow=1;shadowColor=#FFFFFF;labelBackgroundColor=#FFFFFF;strokeWidth=3;" vertex="1" parent="yb4hA4Khy_7tdi6xdVI1-1">
+          <mxGeometry x="280" y="200" width="420" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="yb4hA4Khy_7tdi6xdVI1-6" value="" style="shape=component;jettyWidth=8;jettyHeight=4;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="yb4hA4Khy_7tdi6xdVI1-5">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yb4hA4Khy_7tdi6xdVI1-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=#000000;shadow=1;shadowColor=#FFFFFF;" edge="1" parent="yb4hA4Khy_7tdi6xdVI1-1" source="yb4hA4Khy_7tdi6xdVI1-4" target="yb4hA4Khy_7tdi6xdVI1-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="VectorDB-Dark" id="4V_r_1QsA0kp0PUe6Fxs">
+    <mxGraphModel dx="1042" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="IutgjgMB-8EKcTZQBmqx-0" />
+        <mxCell id="IutgjgMB-8EKcTZQBmqx-1" parent="IutgjgMB-8EKcTZQBmqx-0" />
+        <mxCell id="IutgjgMB-8EKcTZQBmqx-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;" vertex="1" parent="IutgjgMB-8EKcTZQBmqx-1">
+          <mxGeometry x="140" y="180" width="580" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="IutgjgMB-8EKcTZQBmqx-3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=0;strokeColor=#FFFFFF;shadow=1;shadowColor=#000000;" edge="1" parent="IutgjgMB-8EKcTZQBmqx-1" source="IutgjgMB-8EKcTZQBmqx-4" target="IutgjgMB-8EKcTZQBmqx-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="204" y="355" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IutgjgMB-8EKcTZQBmqx-4" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;VectorDB&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=#FFFFFF;shadow=1;fillColor=#000000;shadowColor=#000000;gradientColor=none;" vertex="1" parent="IutgjgMB-8EKcTZQBmqx-1">
+          <mxGeometry x="159" y="205" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="IutgjgMB-8EKcTZQBmqx-5" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&lt;b&gt;Elasticsearch&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;b&gt;++&amp;nbsp;Open Source: &lt;/b&gt;Licensed under the AGPLv3 (OSI-approved) since September 2024&lt;br&gt;&lt;b&gt;+ Primary Use:&lt;/b&gt; High-performance, distributed full-text search and analytics engine&lt;br&gt;&lt;b&gt;+ Vector similarity search&lt;/b&gt;&lt;br&gt;&lt;b&gt;+ Dimensions:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;1,024&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;*(see:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;https://www.elastic.co/)&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;fillColor=#000000;strokeColor=#FFFFFF;fontColor=#FFFFFF;gradientColor=none;shadow=1;shadowColor=#000000;" vertex="1" parent="IutgjgMB-8EKcTZQBmqx-1">
+          <mxGeometry x="228" y="295" width="472" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="IutgjgMB-8EKcTZQBmqx-6" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="IutgjgMB-8EKcTZQBmqx-5">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="VectorDB-Light" id="6ipF8fqtQIb9QICiFEIi">
+    <mxGraphModel dx="868" dy="528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="_IkyH8U3z_oCybvsZeeS-0" />
+        <mxCell id="_IkyH8U3z_oCybvsZeeS-1" parent="_IkyH8U3z_oCybvsZeeS-0" />
+        <mxCell id="_IkyH8U3z_oCybvsZeeS-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="_IkyH8U3z_oCybvsZeeS-1">
+          <mxGeometry x="140" y="180" width="580" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="4tXKvtQHkQcLnNLiLdiY-0" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#000000;curved=0;shadow=1;shadowColor=#FFFFFF;" edge="1" parent="_IkyH8U3z_oCybvsZeeS-1" source="_IkyH8U3z_oCybvsZeeS-6" target="_IkyH8U3z_oCybvsZeeS-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_IkyH8U3z_oCybvsZeeS-6" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;VectorDB&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=light-dark(default, #ffffff);fontColor=#000000;strokeColor=#000000;shadow=1;fillColor=#FFFFFF;shadowColor=#000000;gradientColor=none;strokeWidth=3;" vertex="1" parent="_IkyH8U3z_oCybvsZeeS-1">
+          <mxGeometry x="159" y="205" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_IkyH8U3z_oCybvsZeeS-14" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&lt;b&gt;Elasticsearch&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;b&gt;++&amp;nbsp;Open Source: &lt;/b&gt;Licensed under the AGPLv3 (OSI-approved) since September 2024&lt;br&gt;&lt;b&gt;+ Primary Use:&lt;/b&gt; High-performance, distributed full-text search and analytics engine&lt;br&gt;&lt;b&gt;+ Vector similarity search&lt;/b&gt;&lt;br&gt;&lt;b&gt;+ Dimensions:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;&quot;&gt;1,024&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;&quot;&gt;*(see:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;https://www.elastic.co/)&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;gradientColor=none;shadow=1;shadowColor=#000000;labelBackgroundColor=light-dark(default, #ffffff);strokeWidth=3;" vertex="1" parent="_IkyH8U3z_oCybvsZeeS-1">
+          <mxGeometry x="228" y="295" width="472" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="_IkyH8U3z_oCybvsZeeS-15" value="" style="shape=component;jettyWidth=8;jettyHeight=4;strokeColor=#000000;fillColor=#FFFFFF;" vertex="1" parent="_IkyH8U3z_oCybvsZeeS-14">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Ollama-Dark" id="a9glKYvpWOwnK-VaWSwh">
+    <mxGraphModel dx="270" dy="667" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="FWkn2d9D171S8oruhYCD-0" />
+        <mxCell id="FWkn2d9D171S8oruhYCD-1" parent="FWkn2d9D171S8oruhYCD-0" />
+        <mxCell id="FWkn2d9D171S8oruhYCD-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;" vertex="1" parent="FWkn2d9D171S8oruhYCD-1">
+          <mxGeometry x="970" y="100" width="560" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="FWkn2d9D171S8oruhYCD-7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;elbow=vertical;curved=0;strokeColor=#FFFFFF;shadow=1;shadowColor=#000000;" edge="1" parent="FWkn2d9D171S8oruhYCD-1" source="FWkn2d9D171S8oruhYCD-9" target="FWkn2d9D171S8oruhYCD-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FWkn2d9D171S8oruhYCD-8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=0;strokeColor=#FFFFFF;shadow=1;shadowColor=#000000;" edge="1" parent="FWkn2d9D171S8oruhYCD-1" source="FWkn2d9D171S8oruhYCD-9" target="FWkn2d9D171S8oruhYCD-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FWkn2d9D171S8oruhYCD-9" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;LLM Host&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;i&gt;Ollama&lt;/i&gt;&lt;div&gt;&lt;i&gt;(see:&amp;nbsp;&lt;/i&gt;&lt;span style=&quot;&quot;&gt;&lt;i&gt;https://ollama.com/)&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=#000000;fontColor=#FFFFFF;strokeColor=#FFFFFF;shadow=1;fillColor=#000000;shadowColor=#000000;gradientColor=none;" vertex="1" parent="FWkn2d9D171S8oruhYCD-1">
+          <mxGeometry x="986" y="110" width="155" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FWkn2d9D171S8oruhYCD-10" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&lt;b&gt;Qwen3-8B&lt;/b&gt;&lt;span style=&quot;background-color: transparent; text-align: left;&quot;&gt;&lt;b&gt;-q4_K_M&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;b&gt;++ Open Source:&amp;nbsp;&lt;/b&gt;Apache license 2.0&lt;br&gt;&lt;b&gt;+ &lt;/b&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;b&gt;Model Size: &lt;/b&gt;8.2 billion parameters&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;b&gt;+&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;b&gt;Context Length: &lt;/b&gt;32,768 tokens (up to 131,072 with YaRN)&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;b&gt;+ Multilingual Support&lt;/b&gt;&lt;br&gt;&lt;b&gt;+ Feature-Rich&lt;br&gt;+ Available on Ollama, Huggingface&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;*(see:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;https://qwenlm.github.io/blog/qwen3/)&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;fillColor=#000000;strokeColor=#FFFFFF;fontColor=#FFFFFF;gradientColor=none;shadow=1;shadowColor=#000000;" vertex="1" parent="FWkn2d9D171S8oruhYCD-1">
+          <mxGeometry x="1096" y="200" width="350" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="FWkn2d9D171S8oruhYCD-11" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="FWkn2d9D171S8oruhYCD-10">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FWkn2d9D171S8oruhYCD-12" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&lt;b&gt;mxbai-embed-large:335m-v1-fp16&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;b&gt;++ Open Source:&amp;nbsp;&lt;/b&gt;Apache license 2.0&lt;br&gt;&lt;b&gt;+ &lt;/b&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;b&gt;Model Size:&amp;nbsp;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;335M params&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;b&gt;+ Dimensions:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;1,024&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;b style=&quot;background-color: transparent;&quot;&gt;+ Available on Ollama, Huggingface&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;b style=&quot;&quot;&gt;- &lt;u&gt;Supported languages:&lt;/u&gt;&lt;/b&gt;&lt;u&gt; English&lt;/u&gt; (example model with multilingual support:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;https://huggingface.co/Snowflake/snowflake-arctic-embed-l-v2.0&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;*(see:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;https://www.mixedbread.com/blog/mxbai-embed-large-v1)&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;fillColor=#000000;strokeColor=#FFFFFF;fontColor=#FFFFFF;gradientColor=none;shadow=1;shadowColor=#000000;" vertex="1" parent="FWkn2d9D171S8oruhYCD-1">
+          <mxGeometry x="1096" y="370" width="420" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="FWkn2d9D171S8oruhYCD-13" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="FWkn2d9D171S8oruhYCD-12">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Ollama-Light" id="xk_VrJX1ESYVOYr0i0k7">
+    <mxGraphModel dx="215" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="Uj_20chg5ty9ggpP9IbJ-0" />
+        <mxCell id="Uj_20chg5ty9ggpP9IbJ-1" parent="Uj_20chg5ty9ggpP9IbJ-0" />
+        <mxCell id="Uj_20chg5ty9ggpP9IbJ-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="Uj_20chg5ty9ggpP9IbJ-1">
+          <mxGeometry x="970" y="100" width="560" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="Uj_20chg5ty9ggpP9IbJ-3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;elbow=vertical;curved=0;strokeColor=#000000;shadow=1;shadowColor=#FFFFFF;" edge="1" parent="Uj_20chg5ty9ggpP9IbJ-1" source="Uj_20chg5ty9ggpP9IbJ-5" target="Uj_20chg5ty9ggpP9IbJ-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Uj_20chg5ty9ggpP9IbJ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=0;strokeColor=#000000;shadow=1;shadowColor=#FFFFFF;" edge="1" parent="Uj_20chg5ty9ggpP9IbJ-1" source="Uj_20chg5ty9ggpP9IbJ-5" target="Uj_20chg5ty9ggpP9IbJ-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Uj_20chg5ty9ggpP9IbJ-5" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;LLM Host&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;i&gt;Ollama&lt;/i&gt;&lt;div&gt;&lt;i&gt;(see:&amp;nbsp;&lt;/i&gt;&lt;span style=&quot;&quot;&gt;&lt;i&gt;https://ollama.com/)&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;shadow=1;fillColor=#FFFFFF;shadowColor=#000000;gradientColor=none;strokeWidth=3;" vertex="1" parent="Uj_20chg5ty9ggpP9IbJ-1">
+          <mxGeometry x="986" y="110" width="155" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Uj_20chg5ty9ggpP9IbJ-6" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&lt;b&gt;Qwen3-8B&lt;/b&gt;&lt;span style=&quot;text-align: left;&quot;&gt;&lt;b&gt;-q4_K_M&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;b&gt;++ Open Source:&amp;nbsp;&lt;/b&gt;Apache license 2.0&lt;br&gt;&lt;b&gt;+ &lt;/b&gt;&lt;span style=&quot;&quot;&gt;&lt;b&gt;Model Size: &lt;/b&gt;8.2 billion parameters&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;b&gt;+&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;&quot;&gt;&lt;b&gt;Context Length: &lt;/b&gt;32,768 tokens (up to 131,072 with YaRN)&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;b&gt;+ Multilingual Support&lt;/b&gt;&lt;br&gt;&lt;b&gt;+ Feature-Rich&lt;br&gt;+ Available on Ollama, Huggingface&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;&quot;&gt;*(see:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;https://qwenlm.github.io/blog/qwen3/)&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;fillColor=#000000;strokeColor=#000000;fontColor=#000000;gradientColor=none;shadow=1;shadowColor=#000000;strokeWidth=3;labelBackgroundColor=#FFFFFF;" vertex="1" parent="Uj_20chg5ty9ggpP9IbJ-1">
+          <mxGeometry x="1096" y="200" width="350" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Uj_20chg5ty9ggpP9IbJ-7" value="" style="shape=component;jettyWidth=8;jettyHeight=4;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="Uj_20chg5ty9ggpP9IbJ-6">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Uj_20chg5ty9ggpP9IbJ-8" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&lt;b&gt;mxbai-embed-large:335m-v1-fp16&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;b&gt;++ Open Source:&amp;nbsp;&lt;/b&gt;Apache license 2.0&lt;br&gt;&lt;b&gt;+ &lt;/b&gt;&lt;span style=&quot;&quot;&gt;&lt;b&gt;Model Size:&amp;nbsp;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;335M params&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;b&gt;+ Dimensions:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;&quot;&gt;1,024&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;b style=&quot;&quot;&gt;+ Available on Ollama, Huggingface&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;b style=&quot;&quot;&gt;- &lt;u&gt;Supported languages:&lt;/u&gt;&lt;/b&gt;&lt;u&gt; English&lt;/u&gt; (example model with multilingual support:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;https://huggingface.co/Snowflake/snowflake-arctic-embed-l-v2.0&lt;/span&gt;&lt;span style=&quot;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;&quot;&gt;*(see:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;https://www.mixedbread.com/blog/mxbai-embed-large-v1)&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;gradientColor=none;shadow=1;shadowColor=#000000;strokeWidth=3;labelBackgroundColor=#FFFFFF;" vertex="1" parent="Uj_20chg5ty9ggpP9IbJ-1">
+          <mxGeometry x="1096" y="370" width="420" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Uj_20chg5ty9ggpP9IbJ-9" value="" style="shape=component;jettyWidth=8;jettyHeight=4;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="Uj_20chg5ty9ggpP9IbJ-8">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

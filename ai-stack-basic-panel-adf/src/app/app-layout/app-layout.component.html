@@ -1,0 +1,37 @@
+<adf-sidenav-layout [sidenavMin]="70" [sidenavMax]="200" [stepOver]="780" [hideSidenav]="false" [expandedSidenav]="false">
+
+  <adf-sidenav-layout-header>
+    <ng-template let-toggleMenu="toggleMenu">
+        <div>
+            <button mat-icon-button adf-menu-toggle (click)="toggleMenu()">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </div>
+    </ng-template>
+  </adf-sidenav-layout-header>
+
+    <adf-sidenav-layout-navigation>
+        <ng-template let-isMenuMinimized="isMenuMinimized">
+            <mat-nav-list class="adf-sidenav-linklist">
+                <a mat-list-item class="adf-sidenav-link" routerLink="/chat">
+                    <mat-icon matListIcon class="sidenav-menu-icon">chat</mat-icon>
+                    <div class="sidenav-menu-label" *ngIf="!isMenuMinimized()">Chat</div>
+                </a>
+                <a mat-list-item class="adf-sidenav-link" routerLink="/documents">
+                    <mat-icon matListIcon class="sidenav-menu-icon">folder_open</mat-icon>
+                    <div class="sidenav-menu-label" *ngIf="!isMenuMinimized()">Documents</div>
+                </a>
+                <a mat-list-item adf-logout class="adf-sidenav-link">
+                    <mat-icon matListIcon class="sidenav-menu-icon">exit_to_app</mat-icon>
+                    <div class="sidenav-menu-label" *ngIf="!isMenuMinimized()">Logout</div>
+                </a>
+            </mat-nav-list>
+        </ng-template>
+    </adf-sidenav-layout-navigation>
+
+    <adf-sidenav-layout-content>
+        <ng-template>
+            <router-outlet></router-outlet>
+        </ng-template>
+    </adf-sidenav-layout-content>
+</adf-sidenav-layout>

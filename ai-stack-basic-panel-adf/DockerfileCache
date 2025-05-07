@@ -1,0 +1,6 @@
+FROM node:20.9.0-bookworm AS cache
+WORKDIR /app
+COPY package.json package.json
+COPY scripts/copy-and-hash-pdf-worker.js scripts/copy-and-hash-pdf-worker.js
+COPY src/environments src/environments
+RUN npm install --save-exact --legacy-peer-deps

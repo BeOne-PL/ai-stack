@@ -1,0 +1,1 @@
+{"RAG_API_URL": "http://beone-ai-stack-alfresco-ai-framework-1:9999/chat", "OLLAMA_MODEL": "qwen3:8b-q4_K_M", "DEBUG_LOGGING": true}

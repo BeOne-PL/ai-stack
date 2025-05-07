@@ -1,0 +1,34 @@
+<ng-container *ngIf="nodeId">
+  <ng-template #sidebarTemplate>
+    <adf-info-drawer [title]="'APP.INFO_DRAWER.TITLE' | translate">
+      <adf-info-drawer-tab [label]="'APP.INFO_DRAWER.COMMENTS' | translate">
+        <adf-node-comments [nodeId]="nodeId">
+        </adf-node-comments>
+      </adf-info-drawer-tab>
+
+      <adf-info-drawer-tab [label]="'APP.INFO_DRAWER.PROPERTIES' | translate">
+        <adf-content-metadata-card [node]="node">
+        </adf-content-metadata-card>
+      </adf-info-drawer-tab>
+
+      <adf-info-drawer-tab [label]="'APP.INFO_DRAWER.VERSIONS' | translate">
+        <mat-card>
+          <mat-card-content>
+            <adf-version-manager
+              [node]="node"
+              (uploadError)="onUploadError($event)"
+            >
+            </adf-version-manager>
+          </mat-card-content>
+        </mat-card>
+      </adf-info-drawer-tab>
+    </adf-info-drawer>
+  </ng-template>
+
+  <adf-viewer
+    [allowRightSidebar]="true"
+    [sidebarRightTemplate]="sidebarTemplate"
+    [nodeId]="nodeId" (showViewerChange)="onViewerVisibilityChanged()"
+    [blobFile]="blob">
+  </adf-viewer>
+</ng-container>

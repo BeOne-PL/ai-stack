@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>ai-stack-platform-docker</artifactId>
+    <name>Alfresco Platform Docker</name>
+    <description>Platform/Repo Docker Module to generate the final Docker image</description>
+    <packaging>jar</packaging>
+
+    <parent>
+        <groupId>pl.beone.ai</groupId>
+        <artifactId>ai-stack</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <properties>
+        <maven.deploy.skip>true</maven.deploy.skip>
+        <docker.verbose>true</docker.verbose>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>pl.beone.ai</groupId>
+            <artifactId>ai-stack-platform</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>3.1.1</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <!-- Copy the repository extension and the dependencies required for execute integration tests -->
+                    <execution>
+                        <id>collect-test-artifacts</id>
+                        <phase>pre-integration-test</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/extensions</outputDirectory>
+                            <excludeScope>compile</excludeScope>
+                        </configuration>
+                    </execution>
+                    <!-- Collect extensions (JARs or AMPs) declared in this module do be deployed to docker -->
+                    <execution>
+                        <id>collect-extensions</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/extensions</outputDirectory>
+                            <includeScope>runtime</includeScope>
+                            <!-- IMPORTANT: if using amp dependencies only, add <includeTypes>amp</includeTypes> -->
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- Filter the Dockerfile and the other files added to the container to be able to replace maven properties -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-and-filter-docker-resources</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>src/main/docker</directory>
+                                    <filtering>true</filtering>
+                                    <excludes>
+                                        <exclude>**/*.jar</exclude>
+                                        <exclude>**/*.so</exclude>
+                                        <exclude>**/*.gz</exclude>
+                                    </excludes>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-and-filter-docker-resources-non-filtered</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>src/main/docker</directory>
+                                    <filtering>false</filtering>
+                                    <includes>
+                                        <include>**/*.jar</include>
+                                        <include>**/*.so</include>
+                                        <include>**/*.gz</include>
+                                    </includes>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>io.fabric8</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>0.43.0</version>
+                <configuration>
+                    <images>
+                        <image>
+                            <alias>alfresco</alias>
+                            <name>${project.artifactId}:${project.version}</name>
+                            <build>
+                                <dockerFileDir>${project.basedir}/target</dockerFileDir>
+                            </build>
+                        </image>
+                    </images>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>docker-build</id>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>build</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

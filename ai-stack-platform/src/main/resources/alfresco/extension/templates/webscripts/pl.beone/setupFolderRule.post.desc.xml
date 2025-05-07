@@ -1,0 +1,6 @@
+<webscript>
+    <shortname>Setup folder rule</shortname>
+    <description>Setup folder rule</description>
+    <url>/api/ai/setupFolderRule</url>
+    <authentication>admin</authentication>
+</webscript>
