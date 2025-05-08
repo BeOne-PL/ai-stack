@@ -31,10 +31,31 @@ This behavior has been observed and resolved in version 4.40.0.
 Source: [Stack Overflow](https://stackoverflow.com/questions/75809278/running-docker-desktop-containers-with-gpus-tag-hangs-without-any-response-in)
 
 # **Architecture**
-![generalArch](./docs/drawio/ai-stack-arch-Dark.drawio.svg)
-![generalArch](./docs/drawio/ai-stack-Pipelines-Dark.drawio.svg)
-![generalArch](./docs/drawio/ai-stack-Ollama-Dark.drawio.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./docs/drawio/ai-stack-arch-Dark.drawio.svg">
+  <img alt="" src="./docs/drawio/ai-stack-arch-Light.drawio.svg">
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./docs/drawio/ai-stack-Pipelines-Dark.drawio.svg">
+  <img alt="" src="./docs/drawio/ai-stack-Pipelines-Light.drawio.svg">
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./docs/drawio/ai-stack-Ollama-Dark.drawio.svg">
+  <img alt="" src="./docs/drawio/ai-stack-Ollama-Light.drawio.svg">
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./docs/drawio/ai-stack-VectorDB-Dark.drawio.svg">
+  <img alt="" src="./docs/drawio/ai-stack-VectorDB-Light.drawio.svg">
+</picture>
+<details>
+<summary>Fallback architecture images</summary>
+
+![generalArch](./docs/drawio/ai-stack-arch-Dark.drawio.svg)  
+![generalArch](./docs/drawio/ai-stack-Pipelines-Dark.drawio.svg)  
+![generalArch](./docs/drawio/ai-stack-Ollama-Dark.drawio.svg)  
 ![generalArch](./docs/drawio/ai-stack-VectorDB-Dark.drawio.svg)
+
+</details>
 
 # Manual steps after deployment
 ## Pipelines configuration
