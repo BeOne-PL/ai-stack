@@ -1,6 +1,8 @@
 # Changes from upstream
 
-[//]: # (TODO)
+- Refined inter-container communication by leveraging Docker's internal networking.  
+- Automated the creation of necessary folder structures.  
+- Developed a document classification system for tagging, timestamping, and organizing files — modeled after the existing document processing workflow.  
 
 # Acknowledgments
 This folder contains code derived from the [alfresco-ai-framework](https://github.com/aborroy/alfresco-ai-framework) project,

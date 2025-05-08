@@ -1,6 +1,8 @@
 # Changes from upstream
 
-[//]: # (TODO)
+- Refined inter-container communication by leveraging Docker's internal networking.  
+- Introduced the /chat/stream endpoint to enable real-time response streaming.  
+- Implemented the /tags endpoint to trigger the document classification pipeline.  
 
 # Acknowledgments
 This folder contains code derived from the [alfresco-ai-framework](https://github.com/aborroy/alfresco-ai-framework) project,
